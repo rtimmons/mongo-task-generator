@@ -485,9 +485,7 @@ dependencies = [
 
 [[package]]
 name = "evg-api-rs"
-version = "0.2.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5020ae439b4524003ec6883f2e837df0086f8092b88c0aee51ec607cf31ae965"
+version = "0.2.3"
 dependencies = [
  "async-stream",
  "async-trait",

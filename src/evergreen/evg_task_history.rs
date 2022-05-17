@@ -131,6 +131,7 @@ impl TaskHistoryService for TaskHistoryServiceImpl {
             variants: variant.to_string(),
             tasks: task.to_string(),
             tests: None,
+            use_presto: true,
         };
 
         let stats = self
