@@ -1,4 +1,4 @@
-project: mongodb-mongo-master
+project: mms
 revision: abc123
 task_name: version_gen
 version_id: 321abc

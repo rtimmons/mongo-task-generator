@@ -125,13 +125,14 @@ impl TaskHistoryService for TaskHistoryServiceImpl {
         let start_date = today - lookback;
 
         let request = EvgTestStatsRequest {
-            after_date: date_to_string(&start_date),
-            before_date: date_to_string(&today),
-            group_num_days: self.lookback_days,
-            variants: variant.to_string(),
-            tasks: task.to_string(),
-            tests: None,
-            use_presto: true,
+            after_date: "2022-04-15".to_string(),
+            before_date: "2022-04-29".to_string(),
+            group_days: self.lookback_days > 1,
+            group_by_test: false,
+            variant: variant.to_string(),
+            task_name: task.to_string(),
+            test_name: None,
+            presto: true,
         };
 
         let stats = self
